@@ -4,9 +4,9 @@
 **/generated-test-sources/
 
 #-------------
-**/settings
-**/vscode
-**/project
+**/.settings
+**/.vscode
+**/.project
 
 # Node / frontend
 **/node_modules/
