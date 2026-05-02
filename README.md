@@ -190,16 +190,6 @@ curl http://localhost:8080/actuator/health  # API Gateway
 
 ---
 
-## 🔑 Default Admin Credentials
-
-```
-Email:    admin@shopeasy.com
-Password: Admin@1234
-Role:     ROLE_ADMIN
-```
-
----
-
 ## 🔐 Security Architecture
 
 ```
