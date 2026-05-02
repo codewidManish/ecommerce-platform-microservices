@@ -3,6 +3,11 @@
 **/generated-sources/
 **/generated-test-sources/
 
+#-------------
+**/settings
+**/vscode
+**/project
+
 # Node / frontend
 **/node_modules/
 frontend/dist/
