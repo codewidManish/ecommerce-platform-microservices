@@ -57,7 +57,7 @@ services:
     container_name: ecommerce-mysql
     environment:
       MYSQL_ROOT_PASSWORD: 
-      MYSQL_USER: ecommerce
+      MYSQL_USER: 
       MYSQL_PASSWORD: 
     ports:
       - "3306:3306"
@@ -94,7 +94,7 @@ services:
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0
     <<: *service-defaults
-    container_name: ecommerce-zookeeper
+    container_name: 
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
@@ -109,7 +109,7 @@ services:
   kafka:
     image: confluentinc/cp-kafka:7.5.0
     <<: *service-defaults
-    container_name: ecommerce-kafka
+    container_name: 
     depends_on:
       zookeeper:
         condition: service_healthy
