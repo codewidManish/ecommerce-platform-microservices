@@ -4,9 +4,20 @@
 **/generated-test-sources/
 
 #-------------
-**/.settings
-**/.vscode
-**/.project
+# IDE files
+.settings/
+.vscode/
+.project
+.classpath
+.idea/
+*.iml
+
+# Build output
+target/
+*.class
+
+# Logs
+*.log
 
 # Node / frontend
 **/node_modules/
