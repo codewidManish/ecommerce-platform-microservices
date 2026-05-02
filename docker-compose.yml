@@ -28,12 +28,12 @@ x-common-env: &common-env
   EUREKA_HOST: service-discovery
   MYSQL_HOST: mysql
   MYSQL_USER: ecommerce
-  MYSQL_PASSWORD: ecommerce_pass
+  MYSQL_PASSWORD: 
   REDIS_HOST: redis
   KAFKA_BOOTSTRAP_SERVERS: kafka:29092
   ELASTICSEARCH_HOST: elasticsearch
   MONGODB_HOST: mongodb
-  JWT_SECRET: bXlTdXBlclNlY3JldEtleUZvckpXVEF1dGhlbnRpY2F0aW9uMjAyNA==
+  JWT_SECRET: 
 
 x-service-defaults: &service-defaults
   networks:
@@ -58,7 +58,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 
       MYSQL_USER: ecommerce
-      MYSQL_PASSWORD: ecommerce_pass
+      MYSQL_PASSWORD: 
     ports:
       - "3306:3306"
     volumes:
@@ -118,8 +118,8 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 
+      KAFKA_ADVERTISED_LISTENERS: 
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
